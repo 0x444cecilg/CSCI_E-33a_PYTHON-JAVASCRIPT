@@ -1,0 +1,59 @@
+textarea {
+    min-height: 400px;
+}
+
+.email_container {
+    width: 100%;
+    min-height: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 4px;
+    margin-bottom: 5px;
+    padding: 0px 10px;
+  }
+  
+  .email_container:hover {
+    cursor: pointer;
+    -webkit-box-shadow: 0px 2px 2px 2px #e0e0e0;
+    box-shadow: 0px 2px 2px 2px #e0e0e0;
+  }
+  
+  .title-subject_container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100%;
+    min-width: 30%;
+    flex-wrap: wrap;
+    font-weight: 500;
+    padding-top: 12px;
+  }
+  
+  #recipients {
+    margin-right: 25px;
+  }
+  
+  .date-button_container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100%;
+    min-width: 70%;
+    flex-wrap: wrap;
+    font-weight: 500;
+    padding-top: 12px;
+    color: gray;
+  }
+  
+  .email-information {
+    font-weight: 500;
+    margin-bottom: 0px;
+  }
+  
+  #unarchive_button,
+  #archive_button {
+    margin-left: 10px;
+  }

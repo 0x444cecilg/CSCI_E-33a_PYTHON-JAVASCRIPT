@@ -1,0 +1,38 @@
+.postings {
+    border: 1px solid lightgray;
+    margin: 15px; 
+    border-radius: 5px 5px;
+    padding: 12px 25px;
+    background-color: white;
+}
+
+.postings:hover {
+    background-color: gainsboro;
+    opacity: 80%;
+}
+
+h2 {
+    margin-left: 15px;
+    margin-top: 15px;
+}
+
+.left {
+    padding: 15px;
+    background-color: rgb(250, 239, 212);
+}
+
+.right {
+    padding: 15px;
+    background-color: lightskyblue;
+}
+
+.outer {
+    display: grid; 
+    grid-column-gap: 20px; 
+    grid-row-gap: 10px; 
+    grid-template-columns: auto auto;
+}
+
+.inner {
+    font-size: 24px;
+}

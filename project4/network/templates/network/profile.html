@@ -1,0 +1,66 @@
+{% extends "network/layout.html" %}
+{% load static %}
+
+{% block body %}
+    <h2 style="font-family: didot, copperplate;">{{ username }}</h2>
+
+    <div class="container">
+        <div class="row">
+            <div class="col left">
+                <br/>
+                <img src="{% static 'network/img_user.png' %}" alt="User Image" style="height: 100px; display: table; margin: 0 auto;">
+                <div style="display: table; margin: 0 auto; font-size: small;">Member since: {{ date_joined }}</div>
+                <br/>
+                <div class="outer" style="display: grid; grid-column-gap: 20px; grid-row-gap: 10px; grid-template-columns: auto auto">
+                    <div class="inner" style="font-size: 24px; text-align: right;">Followers</div>
+                    <div class="inner" style="font-size: 24px;">Following</div>
+                    <div class="inner" style="font-size: 24px; text-align: right;">{{ followers }}</div>
+                    <div class="inner" style="font-size: 24px;">{{ followees }}</div>
+                </div>
+                <br/>
+                {% if user.is_authenticated and not follow_btn_disabled %}
+                    <form action="" method="post" style="display: table; margin: 0 auto;">
+                        {% csrf_token %}
+                        <button type="submit" class="btn btn-secondary">{{ follow_btn }}</button>
+                    </form>
+                {% endif %}
+            </div>
+            <div class="col right">
+                <h5 style="font-family: didot, copperplate;">{{ username }}'s posts</h5>
+                {% for post in postings %}
+                    <div class="postings">
+                        <!--Content View-->
+                        <div id="content-view-{{ post.id }}" class="content-view" data-post="{{ post.id }}" data-content="{{ post.content }}">
+                            <div>{{ post.content }}</div>
+                        </div>
+
+                        <!--Editing View (feature only available for content creator)-->
+                        {% if user == post.poster %}
+                            <div id="edit-view-{{ post.id }}" class="edit-view">
+                                <form id="edit-form-{{ post.id }}" class="form-group">
+                                    {% csrf_token %}
+                                    <textarea id="edit-{{ post.id }}" class="form-control"></textarea>
+                                </form>
+                            </div>
+                        {% endif %}
+
+                        <div style="font-size: 13px;">{{ post.date }}</div>
+                        
+                        <!--Like button-->
+                        <span>{{ post.count_likes }}</span>
+                        {% if user in post.likes.all %}
+                            <span id="like-{{ post.id }}" data-value="{{ post.id }}" data-user="{{ session_user }}" data-likestatus="1" class="likes"></span>
+                        {% else %}
+                            <span id="like-{{ post.id }}" data-value="{{ post.id }}" data-user="{{ session_user }}" data-likestatus="0" class="likes"></span>
+                        {% endif %}
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+
+{% endblock %}
+
+{% block script %}
+    <script src="{% static 'network/index.js' %}"></script>
+{% endblock %}

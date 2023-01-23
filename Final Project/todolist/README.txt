@@ -1,0 +1,5 @@
+To Do List
+
+A web application created using Django, Javascript, HTML & CSS. The application allows users to register an account and login to create their own task list. I created two models, one for the users, and one database for the content of each task list. In my views file I created functions for logging in, registering a new user, logging out, create a new list, a detailed view of a single list item, for deleting tasks, for marking a task as complete, and one for marking task incomplete. In my templates folder I created the html files for login, register, single task view, and the index. Finally, located in my static folder I wrote the JS for the registration and the main page. My style sheet is also located in the static folder. I chose this design because it followed the structure of our previous projects. I attempted to use ReactJS with the frontend, but just couldn't wrap my head around it in time. 
+
+Youtube video link: https://youtu.be/BGYG4DF-3_U

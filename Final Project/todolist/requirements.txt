@@ -1,0 +1,5 @@
+I installed the following packages for my project
+
+django-online-users 0.3
+djangorestframework 3.12.2
+

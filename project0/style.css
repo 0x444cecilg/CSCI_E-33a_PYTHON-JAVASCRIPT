@@ -1,0 +1,135 @@
+body {
+    background-color: white;
+}
+.tabs {
+    color: rgba(0,0,0,0.87);
+    float: right;
+    margin: 20px;
+    font-family: Roboto,arial,sans-serif;
+    font-size: smaller;
+}
+.imagez {
+    color: #4285f4;
+    font: roboto-regular;
+    font-size: 16px;
+    line-height: 16px;
+    position: absolute;
+}
+a {
+    text-decoration: none; 
+}
+#gog {
+    font-family: Roboto,arial,sans-serif;
+    color: #e8eaed;
+    
+}
+.srchbar {
+    
+    margin:20px;
+    font-size:2.0em;
+    float: center;
+    display:block;
+    width: 100%;
+    text-align:center;
+    
+}
+#mainbar {
+    border-radius: 25px;
+    border: 1px solid rgb(94, 93, 93);
+    background-color: transparent;
+    margin: 10px;
+    padding: 20px;
+    width: 50%;
+    height: 45px;
+    margin: 0 auto;
+    display: block;
+    font-size: medium;
+    
+}
+.bttn {
+    background-color: #f8f9fa;
+    border: 1px solid #f8f9fa;
+    border-radius: 4px;
+    color: #3c4043;
+    font-family: Roboto,arial,sans-serif;
+    font-size: 14px;
+    margin: 11px 4px;
+    padding: 0 16px;
+    line-height: 27px;
+    height: 36px;
+    min-width: 54px;
+    text-align: center;
+    /* cursor: pointer; */
+    user-select: none;
+}
+.bttn:hover {
+  background-color: #d4d6d8;
+}
+#out_out {
+    padding: 200px 0;
+    margin: 0 auto;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 100vh;
+    
+    
+} 
+  
+  #inner-div {
+    color: #e8eaed;
+    display: inline-block;
+    margin: 0 auto;
+    padding: 3px;
+    background-color: transparent;
+  }
+  .adv_s {
+      color: #d93025;
+      width: 100%;
+      margin-left:20px;
+      font-size: larger;
+      padding-bottom: 10px;
+      border-bottom: 0.5px solid grey;
+  }
+  .goog {
+    font-size: x-large;
+    color: #e8eaed;
+    margin: 20px;
+    vertical-align: center;
+    width: 30%;
+  }
+  #hoppa {
+    color: #e8eaed;
+    font-family: Roboto,RobotoDraft,Arial,sans-serif;
+  }
+  .field {
+    margin: 20px;
+    height: 30px;
+  }
+  .textinput {
+    float: center;
+    min-width: 167px;
+    min-height: 41px;
+    vertical-align: middle;
+    width: 50%;
+    
+  }
+  #field1 {
+    margin-left: 100px;
+  }
+  #field2 {
+    margin-left: 25px;
+  }
+  #field3 {
+    margin-left: 70px;
+  }
+  #field4 {
+    margin-left: 60px;
+  }
+  input:focus { 
+    outline: none;
+    border-color: #c4c6c9;
+    box-shadow: 0 0 2px #686b6e;
+}
+ 

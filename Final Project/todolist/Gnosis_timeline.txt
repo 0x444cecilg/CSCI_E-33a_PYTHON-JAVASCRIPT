@@ -1,0 +1,14 @@
+Gnosis Protocol Timeline
+
+1: Gnosis Protocol v1 -  a decentralised prediction market built on the Ethereum protocol
+   Gnosis Auction (DutchX) - an auction site of new tokens for other protocols.
+   Gnosis Safe - multisig erc-20 wallet
+
+2: GnosisDAO - as the prediction market-driven collective, stewarding the Gnosis ecosystem through   futarchy
+
+3: Cowswap v1 - Coincidence of Wants (cow) “an economic phenomenon where two parties each hold an
+item the other wants, so they exchange these items directly."
+
+4: Cowswap v2 Balancer merger - COW Swap is a proof-of-concept dapp (decentralized application) built on Gnosis Protocol v2
+
+5: Gnosis Chain (formerly xDai chain) an EVM based sidechain to Ethereum 
