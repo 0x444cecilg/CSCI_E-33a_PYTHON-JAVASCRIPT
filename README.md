@@ -21,6 +21,7 @@ Final project materials
 To access the materials, simply clone or download the repository.
 
 Getting Started
+
 To run the web applications included in this repository, you will need to have Python 3 installed on your machine. You can download it from the official website: https://www.python.org/downloads/
 
 Once you have Python installed, navigate to the root directory of the repository and install the necessary dependencies by running the following command:
